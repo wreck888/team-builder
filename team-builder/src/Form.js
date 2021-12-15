@@ -21,7 +21,7 @@ function SimpleForm(props){
         <div>
             <h1>Enter Information Here!</h1>
             <form onSubmit={onSubmit}>
-                <label>Member Name 
+                <label>Member Name: 
                 <input
                     value = {values.username}
                     onChange={onChange}
@@ -30,8 +30,8 @@ function SimpleForm(props){
                     placeholder= 'First Name'
                     maxLength='30'             
                 />
-                </label>
-                <label>Member Email 
+                </label><br/>
+                <label>Member Email: 
                 <input
                     value = {values.email}
                     onChange={onChange}
@@ -40,8 +40,8 @@ function SimpleForm(props){
                     placeholder='Email Address Here'
                     maxLength='30'
                 />
-                </label>
-                <label>Role 
+                </label><br/>
+                <label>Member Role: 
                     <select value = {values.role}
                     name = "role" onChange={onChange}>
                          <option value="">-- Select a Role --</option>
@@ -53,7 +53,7 @@ function SimpleForm(props){
                 </label>
                  
                 <div className='submit'>
-                <button>submit</button>
+                <button>Submit</button>
                  </div>
                 </form>
         </div>
